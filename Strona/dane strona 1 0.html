@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<head>
+<meta name=”Keywords” content=”Analiza danych w sporcie, Chelsea, sport, statystyki” />
+<Title>Analiza danych w sporcie</Title>
+</head>
+
+
+<body>
+    <b>
+        <h1>Analiza statystyk w sporcie na przykładach</h1>
+    </b>
+    <br>
+        <h2>Pomocnicy</h2>
+
+<br>
+<font face="Arial"></font>
+<span style="font-size: x-large">W tym miejscu zajmę się analizą statystyk wybranych pomocników z angielskiej drużyny piłkarskiej- Chelsea. 
+    Analiza będzie oparta o ich statystyki i model regresji liniowej na podstawie statystyk innych pomocników Premier League, ale również o zagadnienia taktyczne oparte na meczach. 
+    Wybrani zawodnicy to: Jorginho, Mount, Kovačić i Ruben Loftus-Cheek.
+    
+<br>
+Oto ich statystyki:
+
+<br>
+<br>
+<style> td, th { border: 1px solid black; } </style>
+<!-- -->
+
+<table>
+      <thead>
+          <tr>
+            <th>Name</th> <th>Minutes</th> <th>Goals </th> <th>Exp. goals</th> <th>Shots</th> <th>Assists</th> <th>Key passes</th> <th>Attempted passes</th> <th>Progressive pas.</th> <th>Prog. distance</th>
+          </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <th>Jorginho</th> <td>903</td> <td>2</td>  <td>1.7</td>  <td>3</td>   <td>0</td>  <td>4</td>   <td>612</td>  <td>44</td>  <td>2324</td>   
+         </tr>
+
+         <tr>
+            <th>Mason Mount</th>   <td>1030</td>    <td>2</td>  <td>1.5</td>  <td>22</td>  <td>2</td>  <td>18</td>  <td>496</td>  <td>36</td>  <td>1583</td>  
+         </tr>
+
+         <tr>
+            <th>Mateo Kovačić</th>   <td>635</td>  <td>0</td>  <td>0.3</td>  <td>8</td>   <td>1</td>  <td>8</td>   <td>485</td>  <td>50</td>  <td>4072</td>  
+         </tr>
+         
+         <tr>
+            <th>R.Loftus-Cheek</th>  <td>954</td>  <td>0</td>  <td>1.8</td>  <td>9</td>   <td>0</td>  <td>7</td>   <td>554</td>  <td>42</td>  <td>1888</td>  
+         </tr>
+      </tbody>
+
+
+</table>
+</span>
+
+
+<span style="font-size: large">
+<i> * Minutes= minuty zagrare przez zawodnika (zsumowane z 16 kolejek) <br>
+    * Goals= gole strzelone przez zawodnika (zsumowane z 16 kolejek) <br>
+    * Exp.goals= oczekiwane gole(xg) zawodnika (zsumowane z 16 kolejek) <br>
+    * Shots= strzały oddane przez zawodnika (zsumowane z 16 kolejek) <br>
+    * Assists= asysty zawodnika (zsumowane z 16 kolejek) <br>
+    * Key passes= kluczowe podania zawodnika, podania prowadzące bezpośrednio do strzału (zsumowane z 16 kolejek) <br>
+    * Attempted passes= wszystkie podania zawodnika (zsumowane z 16 kolejek) <br>
+    * Progressive pas.= podania progresywne (skierowane do przodu) zawodnika (zsumowane z 16 kolejek) <br>
+    * Prog. distance= suma odległości podań progresywnych zawodnika (zsumowane z 16 kolejek) <br>
+</i>
+  <br>
+  Statystyki zawodników zostały pobrane ze strony https://fbref.com/search/search.fcgi
+</span>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<img src="apppf.png" alt="regression" width="888" height="535,5">
+
+<img align="right" src="pppdf.png" alt="regression" width="888" height="535,5">
+
+
+<span style="font-size: x-large">
+    <br>
+    Jak widać na załączonych wykresach, pomocnicy Chelsea podają rzadziej do przodu niż zawodnicy innych drużyn. Podają również krócej, zwalniając akcję. 
+    Pozytywnie wyróżnia się tutaj Mateo Kovačić, ktry jest uważany za motor napędowy drużyny, co odzwierciedlają dane. 
+    Bardzo często podaje do przodu względem ilości podań i są to podania większej odległości. Prowadzi to do szybszej i bardziej ofensywne gry.
+    Na 90 minut ma średnio ponad 6 podań progresywnych i jest w tym w najlepszych 2% pomocników Premier League, również na 90 minut ma średnio 71 podań, dzięki czemu jest w tym w najlepszych 8% pomocników Premier League. 
+    Jeśli zaś chodzi o dryblingi, to wykonuje ponad 1 na 90 minut, co stawia go w top 18% pomocników Premier League.
+</span>
+<br>
+<img src="heatmapkova.png" alt="heatmap" width="844" height="468">
+<span style="font-size: medium">https://fbref.com/en/players/79c0821a/Mateo-Kovacic, https://www.sofascore.com/player/mateo-kovacic/136710</span>
+
+<span style="font-size: x-large">
+    <img align="left" src="shotsmin.png" alt="regression" width="888" height="535,5">
+
+
+    <br>
+    Rolę taktyczną Kovačić'ia często określa się mianem mezzali. <br>
+    Przez większość czasu gra w lewej połprzestrzeni ( wąskim pasie boiska między środkiem boiska a skrzydłem) 
+    i stamtąd często szuka podaniem za linię obrony obiegającego wahadłowego, który czeka na obieg skrzydłem i prawdopodnie dośodkowanie. <br>
+    Czasem w takim momencie wchodzi w pojedynek z przeciwnikiem, najczęściej jednym z pomocników rywali. <br>
+    Rzadko pojawia się w w polu karnym przeciwnika, przez co jego liczba strzałów wynosi 3 na 635 minut.
+    
+
+  
+
+
+
+
+
+
+</body>
+</html>
+
+
